@@ -1,58 +1,570 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# RoyalHeart — Project Kelompok
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Repository ini merupakan project bersama kelompok untuk pengembangan website **RoyalHeart** menggunakan **PHP Laravel**.
 
-## About Laravel
+Semua anggota kelompok menggunakan repository ini sebagai source code utama. Pastikan selalu mengambil perubahan terbaru sebelum mulai mengerjakan project.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🔗 Repository
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**GitHub:**  
+https://github.com/misteri-00/royalheart
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🛠️ Teknologi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP
+- Laravel
+- Composer
+- MySQL
+- Blade
+- Bootstrap
+- JavaScript
+- Git & GitHub
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+# 🚀 Instalasi Project
 
-## Agentic Development
+## 1. Clone Repository
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Buka terminal dan jalankan:
 
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/misteri-00/royalheart.git
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Masuk ke folder project:
 
-## Contributing
+```bash
+cd royalheart
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 2. Install Dependency Laravel
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Jalankan:
 
-## Security Vulnerabilities
+```bash
+composer install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Jika project menggunakan dependency JavaScript:
 
-## License
+```bash
+npm install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 3. Membuat File `.env`
+
+Jangan membuat file `.env` sendiri dari awal.
+
+Copy `.env.example` menjadi `.env`.
+
+### Windows
+
+```bash
+copy .env.example .env
+```
+
+### Linux / macOS
+
+```bash
+cp .env.example .env
+```
+
+Kemudian jalankan:
+
+```bash
+php artisan key:generate
+```
+
+---
+
+# 🗄️ Database
+
+Buat database MySQL terlebih dahulu.
+
+Contoh nama database:
+
+```text
+royalheart
+```
+
+Kemudian buka file `.env` dan sesuaikan:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=royalheart
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Sesuaikan `DB_USERNAME` dan `DB_PASSWORD` dengan konfigurasi MySQL di komputer masing-masing.
+
+---
+
+## 4. Migration Database
+
+Setelah database dibuat:
+
+```bash
+php artisan migrate
+```
+
+Jika project memiliki seeder:
+
+```bash
+php artisan db:seed
+```
+
+Atau:
+
+```bash
+php artisan migrate --seed
+```
+
+---
+
+# ▶️ Menjalankan Project
+
+Jalankan Laravel:
+
+```bash
+php artisan serve
+```
+
+Kemudian buka:
+
+```text
+http://127.0.0.1:8000
+```
+
+Jika menggunakan Vite, jalankan pada terminal kedua:
+
+```bash
+npm run dev
+```
+
+Jadi:
+
+### Terminal 1
+
+```bash
+php artisan serve
+```
+
+### Terminal 2
+
+```bash
+npm run dev
+```
+
+---
+
+# 📁 Struktur Project
+
+Struktur utama project:
+
+```text
+royalheart/
+│
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   └── Models/
+│
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── resources/
+│   └── views/
+│       ├── home.blade.php
+│       │
+│       └── layouts/
+│           ├── app.blade.php
+│           ├── head.blade.php
+│           ├── header.blade.php
+│           ├── footer.blade.php
+│           └── script.blade.php
+│
+├── routes/
+│   └── web.php
+│
+├── .env.example
+├── artisan
+├── composer.json
+└── README.md
+```
+
+---
+
+# 🎨 Struktur Blade
+
+Project menggunakan `layouts/app.blade.php` sebagai layout utama.
+
+Strukturnya:
+
+```text
+layouts/app.blade.php
+│
+├── head.blade.php
+├── header.blade.php
+├── @yield('content')
+├── footer.blade.php
+└── script.blade.php
+```
+
+Untuk membuat halaman baru gunakan:
+
+```blade
+@extends('layouts.app')
+
+@section('content')
+
+    <!-- Isi halaman -->
+
+@endsection
+```
+
+Contoh:
+
+```text
+resources/views/
+├── home.blade.php
+├── about.blade.php
+├── causes.blade.php
+├── events.blade.php
+└── contact.blade.php
+```
+
+---
+
+# 🌿 Workflow Git untuk Kelompok
+
+## ⚠️ Sebelum mulai coding
+
+Selalu ambil perubahan terbaru:
+
+```bash
+git pull origin main
+```
+
+Setelah itu baru mulai mengerjakan bagian masing-masing.
+
+---
+
+# 💻 Setelah selesai coding
+
+Cek perubahan:
+
+```bash
+git status
+```
+
+Tambahkan perubahan:
+
+```bash
+git add .
+```
+
+Buat commit:
+
+```bash
+git commit -m "deskripsi perubahan"
+```
+
+Contoh:
+
+```bash
+git commit -m "Tambah halaman home"
+```
+
+Kemudian push:
+
+```bash
+git push origin main
+```
+
+---
+
+# 🔄 Alur Kerja Harian
+
+### Saat mulai bekerja
+
+```bash
+git pull origin main
+```
+
+### Setelah selesai bekerja
+
+```bash
+git status
+git add .
+git commit -m "deskripsi perubahan"
+git push origin main
+```
+
+Contoh lengkap:
+
+```bash
+git pull origin main
+
+# mengerjakan project...
+
+git status
+git add .
+git commit -m "Tambah halaman about"
+git push origin main
+```
+
+---
+
+# ⚠️ PENTING — Jangan Push `.env`
+
+File `.env` berisi informasi sensitif seperti:
+
+- Password database
+- API key
+- Application key
+- Konfigurasi pribadi
+
+**Jangan pernah meng-upload `.env` ke GitHub.**
+
+Gunakan:
+
+```text
+.env.example
+```
+
+sebagai template konfigurasi.
+
+---
+
+# ⚠️ Jika Terjadi `git push rejected`
+
+Jika muncul:
+
+```text
+rejected
+```
+
+Jangan langsung menggunakan:
+
+```bash
+git push --force
+```
+
+Ambil perubahan terbaru terlebih dahulu:
+
+```bash
+git pull --rebase origin main
+```
+
+Kemudian:
+
+```bash
+git push origin main
+```
+
+Jika terjadi conflict, selesaikan conflict terlebih dahulu.
+
+Setelah selesai:
+
+```bash
+git add .
+git rebase --continue
+git push origin main
+```
+
+---
+
+# 👥 Pembagian Pekerjaan
+
+Sebelum mengubah file yang sama dengan anggota lain, komunikasikan terlebih dahulu.
+
+Contoh pembagian:
+
+```text
+Home
+├── HomeController
+└── home.blade.php
+
+About
+├── AboutController
+└── about.blade.php
+
+Causes
+├── CauseController
+└── causes.blade.php
+
+Events
+├── EventController
+└── events.blade.php
+
+Contact
+├── ContactController
+└── contact.blade.php
+```
+
+Usahakan setiap anggota mengerjakan bagian yang berbeda agar mengurangi kemungkinan Git conflict.
+
+---
+
+# 🧩 Membuat Controller
+
+Gunakan Artisan untuk membuat controller:
+
+```bash
+php artisan make:controller HomeController
+```
+
+Contoh:
+
+```bash
+php artisan make:controller AboutController
+php artisan make:controller CauseController
+php artisan make:controller EventController
+php artisan make:controller ContactController
+```
+
+---
+
+# 🧩 Membuat Model dan Migration
+
+Gunakan:
+
+```bash
+php artisan make:model NamaModel -m
+```
+
+Contoh:
+
+```bash
+php artisan make:model Cause -m
+```
+
+---
+
+# 📌 Perintah Git yang Sering Digunakan
+
+### Cek status
+
+```bash
+git status
+```
+
+### Ambil perubahan terbaru
+
+```bash
+git pull origin main
+```
+
+### Melihat perubahan
+
+```bash
+git diff
+```
+
+### Tambahkan perubahan
+
+```bash
+git add .
+```
+
+### Commit
+
+```bash
+git commit -m "pesan commit"
+```
+
+### Push
+
+```bash
+git push origin main
+```
+
+### Melihat branch
+
+```bash
+git branch
+```
+
+---
+
+# 🎯 Quick Start
+
+Untuk anggota kelompok yang baru pertama kali mengambil project:
+
+```bash
+git clone https://github.com/misteri-00/royalheart.git
+cd royalheart
+
+composer install
+
+copy .env.example .env
+
+php artisan key:generate
+
+npm install
+
+php artisan migrate
+
+npm run dev
+```
+
+Buka terminal baru:
+
+```bash
+php artisan serve
+```
+
+Kemudian buka:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# 📌 Untuk Anggota Kelompok
+
+Sebelum mulai coding:
+
+```bash
+git pull origin main
+```
+
+Setelah selesai:
+
+```bash
+git add .
+git commit -m "jelaskan perubahan"
+git push origin main
+```
+
+**Jangan melakukan `git push --force` ke branch `main`.**
+
+Jika akan melakukan perubahan besar pada struktur database, migration, layout utama, atau file yang sedang dikerjakan anggota lain, komunikasikan terlebih dahulu dengan kelompok.
+
+---
+
+## 👨‍💻 RoyalHeart Team
+
+**Repository:**  
+https://github.com/misteri-00/royalheart
+
+**Branch utama:** `main`
+
+Project ini dikembangkan bersama oleh anggota kelompok.
