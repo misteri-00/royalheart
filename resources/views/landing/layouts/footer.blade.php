@@ -1,0 +1,65 @@
+  <!-- Footer Starts -->
+  <footer class="section-padding position-relative pb-0">
+    <div class="overlay"></div>
+    <div class="container position-relative ">
+      <div class="footer-inner white text-center text-lg-start">
+        <div class="footer-top pb-6 border-bottom border-1 border-light20">
+          <div class="row gx-md-5 gy-5">
+            <div class="col-lg-3">
+              <div class="footer-info">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="{{ asset('landing/images/logo-w.png') }}" alt="logo" style="width: 240px;" class="mb-4"></a>
+                </div>
+                <div class="footer-info-inner"> 
+                  <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi modi atque, similique incidunt corporis alias eius mollitia aut.</p>
+                  <ul class="d-flex social-links list-unstyled gap-2 justify-content-center justify-content-lg-start">
+                    <li><a href=""><i class="fab fa-facebook text-center text-white rounded-circle bg-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter text-center text-white rounded-circle bg-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube text-center text-white rounded-circle bg-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram text-center text-white rounded-circle bg-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div class="footer-links">
+                <h4 class="white mb-4">Quick Links</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-3"><a href="cause-list.html">Our Causes</a></li>
+                  <li class="mb-3"><a href="about.html">About Us</a></li>
+                  <li class="mb-3"><a href="event-list.html">Our Misson</a></li>
+                  <li class="mb-3"><a href="contact.html">Contact</a></li>
+                  <li><a href="event-list.html">Latest Events</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-contact">
+                <h4 class="white mb-4">Find Us</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-3">3435 Railroad street sault sainte marie, MI 49783</li>
+                  <li class="mb-3">needhelp@royalheart.com</li>
+                  <li>+1 (514) 312-5678</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer-newsletter">
+                <h4 class="white mb-4">Weekly Newsletter</h4>
+                <form>
+                  <input type="text" placeholder="Name" class="mb-3">
+                  <input type="email" placeholder="Your Email" class="mb-3">
+                  <button class="btn-primary w-100 border-0">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright py-3">
+          <p class="mb-0 text-center">© 2025 royalheart.com All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
+
