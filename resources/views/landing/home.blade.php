@@ -7,7 +7,7 @@
         <div class="slide-info white  position-absolute start-50 translate-middle text-center">
           <h1 class="white mb-4">Quality Education Through Respect & Love</h1>
           <p class="mb-5">Lorem ipsum dolor sit o quidem officiis quis a beatae rem enim nulla odio amet consectetur adipisicing elit. Nemo quidem officiis quis a beatae rem enim nulla odio. Voluptate</p>
-          <a href="donation-form.html" class="btn-primary">Donate Now</a>
+          <a href="{{ route('donate') }}" class="btn-primary">Donate Now</a>
         </div>
       </div>
       <div class="slide position-relative" style="background-image: url('{{ asset('landing/images/indian-child-2021-09-03-12-46-58-utc.jpg') }}');">
@@ -15,7 +15,7 @@
         <div class="slide-info white position-absolute start-50 translate-middle text-center">
           <h1 class="white mb-4">We Help all people in need all around the world</h1>
           <p class="mb-5">Lorem ipsum dolor sit o quidem officiis quis a beatae rem enim nulla odio amet consectetur adipisicing elit. Nemo quidem officiis quis a beatae rem enim nulla odio. Voluptate</p>
-          <a href="about.html" class="btn-primary">Know More</a>
+          <a href="{{ route('about') }}" class="btn-primary">Know More</a>
         </div>
       </div>
       <div class="slide position-relative" style="background-image: url('{{ asset('landing/images/serednie-ukraine-march-09-2011-romani-boy-and-little-girl-in-orange-pumpkin-style-dress-over-clothes_t20_dzoxaJ.jpg') }}');">
@@ -23,7 +23,7 @@
         <div class="slide-info white position-absolute start-50 translate-middle text-center">
           <h1 class="white mb-4">Hepling hand to those in need of help</h1>
           <p class="mb-5">Lorem ipsum dolor sit o quidem officiis quis a beatae rem enim nulla odio amet consectetur adipisicing elit. Nemo quidem officiis quis a beatae rem enim nulla odio. Voluptate</p>
-          <a href="about.html" class="btn-primary">Read More</a>
+          <a href="{{ route('about') }}" class="btn-primary">Read More</a>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
               <h2 class="mb-3 mt-1">Our Goal is to Help Poor People</h2>
               <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aperiam, dolor mollitia facere modi, quisquam nobis, tenetur.</p>
               <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aperiam, dolor mollitia facere modi, quisquam nobis, tenetur dicta accusamus nemo aliquid sequi ullam voluptatem. nihil in tempore.</p>
-              <a href="about.html" class="btn-primary mt-2">More About</a>
+              <a href="{{ route('about') }}" class="btn-primary mt-2">More About</a>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="donation-info">
                   <span class="playfair blue fw-bold">Charity</span>
-                  <h4 class="my-2"><a href="cause-detail.html" class="primary">Financial help for poor, needy families</a></h4>
+                  <h4 class="my-2"><a href="{{ route('causes.detail') }}" class="primary">Financial help for poor, needy families</a></h4>
                   <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit Praesentium.</p>
                   <div class="progress-bar-section my-4">
                     <div class="progress bg-darkgreen position-relative overflow-visible" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
@@ -175,8 +175,8 @@
                     <li><span class="fw-bold">$30000</span> Goal</li>
                   </ul>
                   <ul class="d-flex flex-wrap gap-3 list-unstyled secondary">
-                    <li><a href="donation-form.html" class="btn-primary">Donate Now</a></li>
-                    <li><a href="cause-detail.html" class="btn-secondary">View More</a></li>
+                    <li><a href="{{ route('donate') }}" class="btn-primary">Donate Now</a></li>
+                    <li><a href="{{ route('causes.detail') }}" class="btn-secondary">View More</a></li>
                   </ul>
                 </div>
               </div>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="donation-info">
                   <span class="playfair blue fw-bold">Education</span>
-                  <h4 class="my-2"><a href="cause-detail.html" class="primary">Promoting The Rights of the Children</a></h4>
+                  <h4 class="my-2"><a href="{{ route('causes.detail') }}" class="primary">Promoting The Rights of the Children</a></h4>
                   <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit Praesentium.</p>
                   <div class="progress-bar-section my-4">
                     <div class="progress bg-darkgreen position-relative overflow-visible" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
@@ -204,8 +204,8 @@
                     <li><span class="fw-bold">$30000</span> Goal</li>
                   </ul>
                   <ul class="d-flex flex-wrap gap-3 list-unstyled secondary">
-                    <li><a href="donation-form.html" class="btn-primary">Donate Now</a></li>
-                    <li><a href="cause-detail.html" class="btn-secondary">View More</a></li>
+                    <li><a href="{{ route('donate') }}" class="btn-primary">Donate Now</a></li>
+                    <li><a href="{{ route('causes.detail') }}" class="btn-secondary">View More</a></li>
                   </ul>
                 </div>
               </div>
@@ -217,7 +217,7 @@
                 </div>
                 <div class="donation-info">
                   <span class="playfair blue fw-bold">Healty Water</span>
-                  <h4 class="my-2"><a href="cause-detail.html" class="primary">Raise Fund for Clean Healthy Water</a></h4>
+                  <h4 class="my-2"><a href="{{ route('causes.detail') }}" class="primary">Raise Fund for Clean Healthy Water</a></h4>
                   <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit Praesentium.</p>
                   <div class="progress-bar-section my-4">
                     <div class="progress bg-darkgreen position-relative overflow-visible" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 15px">
@@ -233,8 +233,8 @@
                     <li><span class="fw-bold">$30000</span> Goal</li>
                   </ul>
                   <ul class="d-flex flex-wrap gap-3 list-unstyled secondary">
-                    <li><a href="donation-form.html" class="btn-primary">Donate Now</a></li>
-                    <li><a href="cause-detail.html" class="btn-secondary">View More</a></li>
+                    <li><a href="{{ route('donate') }}" class="btn-primary">Donate Now</a></li>
+                    <li><a href="{{ route('causes.detail') }}" class="btn-secondary">View More</a></li>
                   </ul>
                 </div>
               </div>
@@ -356,7 +356,7 @@
             </div>
             <div class="col-lg-6">
               <div class="event-title-right text-center text-lg-end">
-                <a href="event-list.html" class="btn-primary">View More</a>
+                <a href="{{ route('events.index') }}" class="btn-primary">View More</a>
               </div>
             </div>
           </div>
@@ -365,28 +365,28 @@
           <div class="row gy-4">
             <div class="col-md-6">
               <div class="event-box bg-white p-4">
-                <h4><a href="event-detail.html" class="primary">Fine Education For poor Children</a></h4>
+                <h4><a href="{{ route('events.detail') }}" class="primary">Fine Education For poor Children</a></h4>
                 <p class="mb-3 mt-2"><i class="far fa-calendar me-1"></i> March 2, 2025</p>
                 <p class="mb-0 clip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate itaque illum nihil numquam aspernatur similique! Porro voluptate excepturi harum.</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="event-box bg-white p-4">
-                <h4><a href="event-detail.html" class="primary">Drinking Water and Fresh Food 2025</a></h4>
+                <h4><a href="{{ route('events.detail') }}" class="primary">Drinking Water and Fresh Food 2025</a></h4>
                 <p class="mb-3 mt-2"><i class="far fa-calendar me-1"></i> March 5, 2025</p>
                 <p class="mb-0 clip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate itaque illum nihil numquam aspernatur similique! Porro voluptate excepturi harum.</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="event-box bg-white p-4">
-                <h4><a href="event-detail.html" class="primary">Roof over the head for needed</a></h4>
+                <h4><a href="{{ route('events.detail') }}" class="primary">Roof over the head for needed</a></h4>
                 <p class="mb-3 mt-2"><i class="far fa-calendar me-1"></i> March 2, 2025</p>
                 <p class="mb-0 clip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate itaque illum nihil numquam aspernatur similique! Porro voluptate excepturi harum.</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="event-box bg-white p-4">
-                <h4><a href="event-detail.html" class="primary">primary Education Goal 2025</a></h4>
+                <h4><a href="{{ route('events.detail') }}" class="primary">primary Education Goal 2025</a></h4>
                 <p class="mb-3 mt-2"><i class="far fa-calendar me-1"></i> March 5, 2025</p>
                 <p class="mb-0 clip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate itaque illum nihil numquam aspernatur similique! Porro voluptate excepturi harum.</p>
               </div>
@@ -413,7 +413,7 @@
           </div>
           <div class="col-lg-4">
             <div class="volunteer-banner-right text-center text-lg-end">
-              <a href="volunteer.html" class="btn-primary">Read More</a>
+              <a href="{{ route('contact') }}" class="btn-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -828,7 +828,7 @@
                   <img src="{{ asset('landing/images/Caring-Care-Logo-01-1.jpg') }}" alt="logo" class="border boder-1 border-light">
                 </div>
               </div>
-              <a href="volunteer.html" class="btn-primary mt-2">Read More</a>
+              <a href="{{ route('contact') }}" class="btn-primary mt-2">Read More</a>
             </div>
           </div>
           <div class="col-xl-4">
@@ -856,7 +856,7 @@
               <div>
                 <h2 class="white mb-3">Let’s Become a Volunteer and Help us Build a Better World</h2>
                 <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo recusandae porro incidunt minima a eum nisi inventore tenetur suscipit ipsum autem adipisci, hic quibu.</p>
-                <a href="contact.html" class="btn-secondary mt-2">Join Us Now</a>
+                <a href="{{ route('contact') }}" class="btn-secondary mt-2">Join Us Now</a>
               </div>
             </div>
           </div>
@@ -875,7 +875,7 @@
               <span class="h4 fw-bold playfair blue">From The Blog</span>
               <h2 class=" mb-3">Latest News & Articles</h2>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec leo.</p>
-              <a href="blog-list.html" class="btn-primary mt-2">More Blogs</a>
+              <a href="#" class="btn-primary mt-2">More Blogs</a>
             </div>
           </div>
           <div class="col-lg-9">
@@ -884,7 +884,7 @@
                 <div class="col-md-6">
                   <div class="blog-box">
                     <div class="blog-image">
-                      <a href="blog-single.html" class="position-relative d-block">
+                      <a href="#" class="position-relative d-block">
                         <img src="{{ asset('landing/images/volunteer-with-garbage-outdoors-2021-08-28-11-56-56-utc.jpg') }}" alt="blog image" class="w-100">
                         <div class="overlay"></div>
                       </a>
@@ -894,9 +894,9 @@
                         <img src="{{ asset('landing/images/html-logo.png') }}" alt="blog logo" class="w-50 rounded-circle">
                       </div>
                       <div class="blog-info-top p-4 pt-5">
-                        <h4 class="mb-3"><a href="blog-single.html" class="blue">Many important brands have given us their trust</a></h4>
+                        <h4 class="mb-3"><a href="#" class="blue">Many important brands have given us their trust</a></h4>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maxime dolores voluptates maxime dolores voluptate sit obcaecati.</p>
-                        <a href="blog-single.html" class="primary text-uppercase">Read More</a>
+                        <a href="#" class="primary text-uppercase">Read More</a>
                       </div>
                       <div class="blog-info-bottom small px-4 py-3">
                         <span>November 1, 2025</span><span>No Comments</span>
@@ -917,9 +917,9 @@
                         <img src="{{ asset('landing/images/html-logo.png') }}" alt="blog logo" class="w-50 rounded-circle">
                       </div>
                       <div class="blog-info-top p-4 pt-5">
-                        <h4 class="mb-3"><a href="blog-single.html" class="blue">Save the Children’s Role in Fight Against Malnutrition</a></h4>
+                        <h4 class="mb-3"><a href="#" class="blue">Save the Children’s Role in Fight Against Malnutrition</a></h4>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maxime dolores voluptates maxime dolores voluptate sit obcaecati.</p>
-                        <a href="blog-single.html" class="primary text-uppercase">Read More</a>
+                        <a href="#" class="primary text-uppercase">Read More</a>
                       </div>
                       <div class="blog-info-bottom small px-4 py-3">
                         <span>November 1, 2025</span><span>No Comments</span>
@@ -955,7 +955,7 @@
           </div>
           <div class="col-lg-4">
             <div class="involvement-banner-right text-lg-end">
-              <a href="contact.html" class="btn-primary">Get Involved Now</a>
+              <a href="{{ route('contact') }}" class="btn-primary">Get Involved Now</a>
             </div>
           </div>
         </div>

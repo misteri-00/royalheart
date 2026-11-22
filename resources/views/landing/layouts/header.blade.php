@@ -7,21 +7,21 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="header-top-left">
-                <ul class="list-unstyled d-flex gap-4 small">
+                <ul class="list-unstyled d-flex gap-4 small mb-0">
                   <li><i class="fas fa-phone me-2 primary"></i>+33 877 554 332</li>
-                  <li><i class="far fa-envelope me-2 primary"></i>info@website.com</li>
+                  <li><i class="far fa-envelope me-2 primary"></i>info@royalheart.org</li>
                   <li><i class="far fa-clock me-2 primary"></i>Mon - Fri: 9:00 - 18:30</li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="header-top-left d-flex align-items-center justify-content-end">
-                <ul class="list-unstyled d-flex gap-4  me-5 small">
-                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                  <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <ul class="list-unstyled d-flex gap-4 me-4 small mb-0">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 </ul>
-                <a href="donation-form.html" class="btn-primary" style="padding: 10px 20px;">Donate Now<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="{{ route('donate') }}" class="btn-primary" style="padding: 10px 20px;">Donate Now<i class="fas fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
@@ -34,90 +34,48 @@
       <div class="container">
         <div class="header-nav-inner d-flex justify-content-between">
           <div class="header-logo">
-            <a href="index.html"><img src="{{ asset('landing/images/logo1.png') }}" alt="logo"></a>
+            <a href="{{ route('home') }}"><img src="{{ asset('landing/images/logo1.png') }}" alt="logo"></a>
           </div>
-          <div class="header-nav-right d-flex align-items-center ">
+          <div class="header-nav-right d-flex align-items-center">
             <div class="navbar-collapse justify-content-center playfair" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-nav flex-row align-items-center" id="responsive-menu">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text fw-bold active" href="#" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item">
+                    <a class="nav-link text fw-bold {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">
                       Home
                     </a>
-                    <ul class="dropdown-menu bg-lightgrey p-0 rounded-0 border-0">
-                      <li><a class="dropdown-item fw-bold active text-capitalize black border-0"
-                          href="index.html">Home</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="index-2.html">Home 2</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="index-3.html">Home 3</a></li>   
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                      href="index-4.html">Home 4</a></li> 
-                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text fw-bold" href="about.html">About</a>
+                    <a class="nav-link text fw-bold {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text fw-bold" href="#" role="button"
+                    <a class="nav-link dropdown-toggle text fw-bold {{ request()->routeIs('causes.*') ? 'active' : '' }}" href="#" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       Causes
                     </a>
                     <ul class="dropdown-menu bg-lightgrey p-0 rounded-0 border-0">
                       <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="cause-list.html">Causes List</a></li>
+                          href="{{ route('causes.index') }}">Causes List</a></li>
                       <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="cause-detail.html">Causes Details</a></li>
+                          href="{{ route('causes.detail') }}">Causes Details</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text fw-bold" href="#" role="button"
+                    <a class="nav-link dropdown-toggle text fw-bold {{ request()->routeIs('events.*') ? 'active' : '' }}" href="#" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       Event
                     </a>
                     <ul class="dropdown-menu bg-lightgrey p-0 rounded-0 border-0">
                       <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="event-list.html">Event List</a></li> 
+                          href="{{ route('events.index') }}">Event List</a></li> 
                       <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="event-detail.html">Event Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text fw-bold" href="#" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Pages
-                    </a>
-                    <ul class="dropdown-menu bg-lightgrey p-0 rounded-0 border-0">
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0" 
-                        href="faq.html">Faq</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="testimonial.html">Testimonials</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                      href="gallery.html">Gallery</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="volunteer.html">Volunteers</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="search-result.html">Search Result</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0" 
-                          href="error.html">404Error</a></li>   
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="coming-soon.html">Coming Soon</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle fw-bold text fw-bold" href="#" role="button"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Blog
-                    </a>
-                    <ul class="dropdown-menu bg-lightgrey p-0 rounded-0 border-0">
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="blog-list.html">Blog List</a></li>
-                      <li><a class="dropdown-item fw-bold text-capitalize black border-0"
-                          href="blog-single.html">Blog Single</a></li>
+                          href="{{ route('events.detail') }}">Event Details</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text fw-bold fw-bold" href="contact.html">Contact</a>
+                    <a class="nav-link text fw-bold {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text fw-bold {{ request()->routeIs('donate') ? 'active' : '' }}" href="{{ route('donate') }}">Donate</a>
                   </li>
                 </ul>
               </div>
@@ -132,9 +90,9 @@
         <button type="button" class="close">×</button>
         <form>
           <input type="search" placeholder="Search...">
-          <a class="btn-primary rounded-0 border-0" href="search-result.html">
+          <button type="submit" class="btn-primary rounded-0 border-0">
             <i class="fa fa-search text-white" aria-hidden="true"></i>
-          </a>
+          </button>
         </form>
       </div>
     </div>
